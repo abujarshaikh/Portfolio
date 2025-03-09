@@ -1,0 +1,276 @@
+.home {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 80vh;
+     padding: 0 8%;
+     color: white;
+     font-family: "Poppins", sans-serif;
+}
+
+/* Left Section */
+.home-left {
+     max-width: 50%;
+}
+
+.home-left h3 {
+     font-size: 2.5rem;
+     font-weight: 400;
+     margin-bottom: 2px;
+}
+
+.home-left h1 {
+     margin-top: 25px;
+     font-size: 3.5rem;
+     font-weight: 700;
+}
+
+.home-left h1 span {
+     font-size: 5vw;
+     color: #ffd500;
+}
+
+.home-left h2 {
+     font-size: 2.2rem;
+     margin-bottom: 2px;
+}
+
+.home-left p {
+     font-size: 1.1rem;
+     line-height: 1.6;
+     margin-top: 15px;
+     color: #f1f1f1;
+}
+
+/* Button */
+.btn {
+     width: 220px;
+     height: 65px;
+     background-color: #ffd500;
+     color: #000;
+     font-size: 22px;
+     font-weight: 700;
+     border: 2px solid #ffd500;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.btn:hover {
+     background: none;
+     transform: scale(1.1);
+     color: #ffd500;
+     border: 5px solid #ffd500;
+}
+
+/* Social Icons */
+.social-icon {
+     display: flex;
+     gap: 40px;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2px;
+}
+
+.social-icon a {
+     text-decoration: none;
+}
+
+.icon {
+     font-size: 30px;
+     color: #fffb00;
+     transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+     transform: scale(1.2);
+}
+
+.github:hover {
+     color: #333;
+}
+
+.whatsapp:hover {
+     color: #25D366;
+}
+
+.instagram:hover {
+     color: #E4405F;
+}
+
+.linkedin:hover {
+     color: #0A66C2;
+}
+
+/* Right Section */
+.home-right {
+     width: 40%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.home-right img {
+     width: 100%;
+     max-width: 400px;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 0px 8px 18px rgba(255, 221, 0, 0.2);
+}
+
+.home-right img:hover {
+     cursor: url("https://cdn-icons-png.flaticon.com/32/833/833472.png"), auto;
+     border: 4px solid transparent;
+     animation: borderAnimation 3s infinite linear;
+}
+
+/* Keyframes for Border Animation */
+@keyframes borderAnimation {
+     0% {
+          border-color: #ff0000;
+     }
+
+     25% {
+          border-color: #ffcc00;
+     }
+
+     50% {
+          border-color: #00ff00;
+     }
+
+     75% {
+          border-color: #007bff;
+     }
+
+     100% {
+          border-color: #ff0000;
+     }
+}
+
+/* ---- Responsive Design ---- */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+     .home {
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          height: auto;
+          padding: 5% 5%;
+     }
+
+     .home-left {
+          max-width: 90%;
+     }
+
+     .home-left h1 {
+          font-size: 3rem;
+     }
+
+     .home-left h1 span {
+          font-size: 4.5rem;
+     }
+
+     .btn {
+          width: 200px;
+          height: 60px;
+          font-size: 20px;
+     }
+
+     .home-right {
+          width: 80%;
+          margin-top: 30px;
+     }
+
+     .home-right img {
+          max-width: 320px;
+     }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+     .home {
+          padding: 5% 5%;
+     }
+
+     .home-left h1 {
+          font-size: 2.5rem;
+     }
+
+     .home-left h1 span {
+          font-size: 4rem;
+     }
+
+     .home-left h3 {
+          font-size: 2rem;
+     }
+
+     .home-left p {
+          font-size: 1rem;
+          margin-top: 10px;
+     }
+
+     .btn {
+          width: 180px;
+          height: 55px;
+          font-size: 18px;
+     }
+
+     .social-icon {
+          gap: 30px;
+     }
+
+     .icon {
+          font-size: 25px;
+     }
+
+     .home-right {
+          width: 90%;
+     }
+
+     .home-right img {
+          max-width: 300px;
+     }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+     .home {
+          padding: 5% 3%;
+     }
+
+     .home-left h1 {
+          font-size: 2rem;
+     }
+
+     .home-left h1 span {
+          font-size: 3rem;
+     }
+
+     .home-left h3 {
+          font-size: 1.8rem;
+     }
+
+     .home-left p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+     }
+
+     .btn {
+          width: 160px;
+          height: 50px;
+          font-size: 16px;
+     }
+
+     .social-icon {
+          gap: 20px;
+     }
+
+     .icon {
+          font-size: 22px;
+     }
+
+     .home-right img {
+          max-width: 250px;
+     }
+}

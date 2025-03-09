@@ -1,0 +1,48 @@
+#skills {
+     background: linear-gradient(135deg, #0d1117, #161b22, #0d1117);
+     color: white;
+     padding: 40px 20px;
+     text-align: center;
+}
+
+#skills h2 {
+     font-size: 55px;
+     font-weight: 800;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#skills .max-w-4xl {
+     max-width: 800px;
+     margin: auto;
+     display: grid;
+     gap: 20px;
+}
+
+#skills .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+     gap: 15px;
+}
+
+#skills .bg-gray-800 {
+     background: linear-gradient(135deg, #0d1117, #161b22, #0d1117);
+     border: 1px solid #fffb00;
+     padding: 15px;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .bg-gray-800:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#skills p {
+     font-size: 1.1rem;
+     font-weight: bold;
+     color: #fffb00;
+}
