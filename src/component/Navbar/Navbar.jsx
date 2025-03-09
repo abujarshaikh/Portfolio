@@ -2,23 +2,26 @@
 
 import React, { useState } from "react";
 import "./Navbar.css";
-import ABS from "../Assets/ABS.png";
 
-/**
- *
- */
 const Navbar = () => {
-  const [menu, setMenu] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar_logo">
         <span>ABS || Portfolio</span>
       </div>
-      <ul className="links">
+
+      {/* Hamburger Menu Icon */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
+      </div>
+
+      {/* Navigation Links */}
+      <ul className={`links ${menuOpen ? "active" : ""}`}>
         <li>
           <a href="#">
-            <button>Home </button>
+            <button>Home</button>
           </a>
         </li>
         <li>
@@ -37,13 +40,12 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          {" "}
           <a href="#contact">
             <button>Contact</button>
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
