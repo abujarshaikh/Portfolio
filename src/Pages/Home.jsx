@@ -44,7 +44,7 @@ export const Home = () => {
             <FontAwesomeIcon icon={faWhatsapp} className="icon whatsapp" />
           </a>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/direct/t/abujar__2207/"
             target="_blank"
             rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} className="icon instagram" />
